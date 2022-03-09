@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    min-height: 100vh;
+    background: #D82148;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.note, .add-note{
+    height: 30vh;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: none;outline: none;
+
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.note::placeholder{
+    color: rgb(36, 36, 36);
+}
+
+.note-wrapper{
+    position: relative;   
+}
+
+.note{
+    resize: none;
+    background: white;
+    line-height: 180%;
+}
+
+#trash-btn{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    
+    cursor: pointer;
+    color: #D82148;
+}
+
+.add-note{
+    font-size: 100px;
+    line-height: 50%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .3);
+    color: #eee;
+    transition: .5s;
+}
+
+.add-note:hover{
+    background: rgba(0, 0, 0, .5);
+}
+
